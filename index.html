@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,600;1,600&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            
+            min-height: 95vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .card{
+            position: relative;
+            width: 325px;
+            height: 480px;
+            border-radius: 20px 60px 10px 50px;
+            background-color: #ffffff;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+
+        img.shoes{
+            max-width: 100%;
+            height: auto;
+            position: absolute;
+            top: -74px;
+            right: -70px;
+            transform: rotate(15deg);
+            
+           
+        }
+
+        .card-content{
+            padding: 120px 20px 0px;
+            width: 100%;
+            height: 100%;
+            font-family: 'Open Sans', sans-serif;
+
+            
+          }
+
+          .sub-title{
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #a9a9a9;
+          }
+
+          .title{
+            font-size: 1.71em;
+            font-weight: bold;
+            color: rgba(0, 128, 0, 0.678);
+            width: 8px;
+            margin-top: 10px;
+
+          }
+
+          .valor{
+            
+            text-align: right;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 1.3em;
+            margin: 10px 0px;
+          }
+
+          span{
+            font-size: 15px;
+            text-decoration: none;
+            color: #a9a9a9;
+            font-family: 'Open Sans', sans-serif;
+          }
+
+          .action-container{
+             display: flex;
+           
+            
+             }
+
+          
+          
+          .shoes-options{
+            flex-grow: 1;
+          }
+
+          p{
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-size: 1.1em;
+            color: gray;
+            font-weight: bold;
+            
+          }
+
+          .color-options{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            gap: 30px;
+            padding: 10px 0px;
+            
+             }
+
+        .color{
+                width: 22px;
+                height: 22px;
+                background-color: blue;
+                border-radius: 50%;
+                border: 1px solid rgb(27, 22, 22);
+                
+            }
+
+            .color:nth-child(2){
+                background-color: #ff0000;
+
+            }
+
+
+            .color:nth-child(3){
+                background-color: #008000;
+            }
+
+            .shoes-size{
+                display: block;
+            }
+
+            .tam{
+                margin-top: 10px;
+            }
+
+            .shoes-size{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap:20px;
+                margin-top: 10px;
+            }
+
+            .size-select{
+                background-color:rgb(115, 212, 115) ;
+                color: white;
+                padding: 4px;
+                border-radius: 8px;
+                font-weight: bold;
+            }
+
+            .size{
+                font-size: 15px;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: bold;
+                border-radius: 20px;
+            }
+
+            .size:hover , .size-select:hover{
+                background-color: rgb(115, 212, 115);
+                padding: 5px;
+                transition-duration: 0.5s;
+                transform: scale(1.1);
+                color: white;
+            }
+
+            .cart{
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                align-items: center;
+                
+            }
+
+            button{
+                width: 52px;
+                height: 80px;
+                background-color: rgb(155, 233, 155) ;
+                border-radius: 16px;
+                box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+            }
+
+            button:hover{
+                cursor: pointer;
+            }
+
+        
+
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img class="shoes" src="imagens/shoes.png" alt="tenis preto com verde">
+        <div class="card-content">
+          
+        <p class="sub-title">Tenis NMT</p>
+        <h2 class="title">Sport Epic Transition</h2>
+        <h3 class="valor"> <span>R$</span> 250,00</h3>
+
+            <div class="action-container">
+               <div class="shoes-options">
+                <p>Cores:</p>
+                <div class="color-options">
+                    <div class="color"></div>
+                    <div class="color"></div>
+                    <div class="color"></div>
+                </div>
+                <p class="tam">Tamanhos:</p>
+                <div class="shoes-size">
+
+                <div class="size-select">35</div>
+                <div class="size">36</div>
+                <div class="size">38</div>
+                 <div class="size">40</div>
+
+                </div>
+               </div>
+               <div class="cart"> 
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart-icon lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg> 
+                </button>
+               </div>
+
+            </div>
+         </div>
+            
+         </div>
+
+    </div>
+</body>
+</html>
