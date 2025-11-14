@@ -19,3 +19,6 @@ Construção de interfaces modernas
 Responsividade básica
 Efeitos com hover e transições
 Posicionamento de elementos (layout + imagem flutuante)
+
+Acesse o projeto online: https://nataliamorais-front.github.io/Card-de-produto/
+
